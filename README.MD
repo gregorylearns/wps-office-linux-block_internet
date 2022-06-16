@@ -18,11 +18,15 @@ sudo apt-get install firejail firejail-profiles
 
 ### Method 1:
 
-This is a bash script to change the default `Exec=` parameter on the system `.desktop` files on the directories: `/opt/kingsoft/wps-office/desktops/` and `/usr/share/applications`. The `Exec=` parameter is prepended with the command `firejail --net=none` which blocks internet access.
+This is a bash script to change the default `Exec=` parameter on the system `.desktop` files on the directories: 
+* `/opt/kingsoft/wps-office/desktops/` and 
+* `/usr/share/applications`. 
+
+The `Exec=` parameter is prepended with the command `firejail --net=none` which blocks internet access.
 
 Add this to a bash file and run it:
 
-```
+```bash
 #!/bin/bash
 # script to automatically change the exec parameter  on .desktop files on wps on
 # linux.
